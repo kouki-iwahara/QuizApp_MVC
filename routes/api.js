@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const quizController = require('../controllers/QuizController')
+const quizController = require('../controllers/QuizController');
 
-router.get('/', quizController.getQuizData)
+// クイズデータ参照のページ
+router.get('/', quizController.getQuizData);
 
 module.exports = router;
