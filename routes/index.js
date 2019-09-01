@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const indexController = require('../controllers/indexController');
 
-router.get('/', (req, res) => {
-  return res.render('index.ejs');
-});
+router.get('/', indexController.showQuizPage);
 
 module.exports = router;
