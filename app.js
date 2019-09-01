@@ -1,8 +1,10 @@
 const express = require('express');
-const app = express();
+const indexRouter = require('./routes/index')
+const quizApiRouter = require('./routes/api')
 
-app.use('/', require('./routes/index'));
-app.use('/api', require('./routes/api'))
+const app = express();
+app.use('/', indexRouter);
+app.use('/api', quizApiRouter)
 app.use(express.static('public'));
 
 app.listen(3000, () => {

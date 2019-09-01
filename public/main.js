@@ -34,7 +34,7 @@ const createHomeDisplay = () => {
 // クイズデータを取得、表示する関数
 const showQuiz = async (index) => {
   // API取得
-  const api = await fetch('./api');
+  const api = await fetch('./api/quiz');
   const quizData = await api.json();
   console.log(quizData);
   // 取得したデータを使い問題生成
