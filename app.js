@@ -8,5 +8,5 @@ app.use('/api', quizApiRouter)
 app.use(express.static('public'));
 
 app.listen(3000, () => {
-  console.log('start server');
+  console.log('start server listening on http://localhost:3000');
 });
