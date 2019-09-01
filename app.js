@@ -3,6 +3,8 @@ const indexRouter = require('./routes/index')
 const quizApiRouter = require('./routes/api')
 
 const app = express();
+app.set("view engine", "ejs");
+
 app.use('/', indexRouter);
 app.use('/api', quizApiRouter)
 app.use(express.static('public'));
