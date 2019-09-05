@@ -1,4 +1,4 @@
-const Quiz = require('../models/Quiz')
+const Quiz = require('../models/quiz')
 
 // クイズデータをjsonにしてroutesに渡す
 module.exports.getQuizData = async (req, res) => {
